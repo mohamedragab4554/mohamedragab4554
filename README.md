@@ -29,6 +29,17 @@ My standard: **results that survive review.** That means field validation rather
 | **[ifc-model-auditor](https://github.com/mohamedragab4554/ifc-model-auditor)** | BIM models tested like code: ISO 19650 naming, **buildingSMART IDS**, spatial and identity checks, duplicates, quantity take-off, **schema-valid BCF 2.1**, and a GitHub Action quality gate. Found 454 duplicated MEP fittings and a mis-mapped steel export in real Revit models |
 | **[ifc-load-takedown](https://github.com/mohamedragab4554/ifc-load-takedown)** | Column loads straight from IFC: Voronoi tributary areas, EN 1991-1-1 actions, **EN 1990 6.10a/b with leading and accompanying actions**, αn per category, equilibrium-checked, results written back into the IFC |
 | **[ec2-crack-width](https://github.com/mohamedragab4554/ec2-crack-width)** | EN 1992-1-1 §7.3 crack widths and EN 1992-3 tightness limits, shown step by step. **Cross-checked against fib's `structuralcodes`** on 200 random cases. Compares measured crack widths with design limits |
+
+### Construction data and forecasting
+
+| Project | What it shows |
+|---|---|
+| **[uk-construction-material-price-forecasting](https://github.com/mohamedragab4554/uk-construction-material-price-forecasting)** | 7 models on ONS and DBT material price indices, **rolling-origin backtests against a no-change baseline**, and P10/P50/P90 cost escalation with a coverage test. I found that my own coursework scores were in-sample and one was fitted on 11 of 132 months. A coverage test shows the 80% bands under-cover after the 2021–23 surge. *MSc coursework, rebuilt* |
+
+### Portfolio
+
+| Project | What it shows |
+|---|---|
 | **[mohamedragab4554.github.io](https://github.com/mohamedragab4554/mohamedragab4554.github.io)** | My portfolio: Next.js + three.js with real-data 3D visuals (AI detections on structural plans, scan-to-IFC). Lighthouse 100 on desktop |
 
 **Professional R&D (not open source):** structural-drawing understanding with an 8-class segmentation model (val mask mAP50 0.893), Scan-to-BIM from 250 M+ point laser scans to IFC, and a production inspection pipeline. These are employer and company work, shown as case studies on the **[portfolio](https://mohamedragab4554.github.io)** only.
@@ -39,7 +50,7 @@ My standard: **results that survive review.** That means field validation rather
 
 **AI & data:**
 - PyTorch · segmentation-models-pytorch · Ultralytics YOLO · TensorFlow/Keras
-- OpenCV · Open3D · NumPy · pandas · scikit-learn
+- OpenCV · Open3D · NumPy · pandas · scikit-learn · statsmodels (time-series forecasting)
 
 **openBIM:**
 - IfcOpenShell · IDS / ifctester · BCF · Revit · Dynamo · Navisworks
