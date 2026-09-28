@@ -1,27 +1,35 @@
 <p align="center"><img src="assets/banner.png" alt="Mohamed Ragab: AI & digital construction engineer" width="100%"></p>
 
-### AI & Digital Construction Engineer · structural engineering · computer vision · BIM
+### AI & Digital Construction Engineer · structural engineering · computer vision · openBIM
 
-I'm a structural engineer who builds AI for the built environment. I train and evaluate computer-vision models on inspection photos, structural drawings and laser scans. I engineer the datasets behind them, and connect the results to BIM and the tools engineers already use.
+I'm a structural engineer who builds software for the built environment. I train and evaluate computer-vision models on inspection photos, drawings and laser scans. I write openBIM tools that check and use IFC models, and I keep the engineering (Eurocodes, load paths, serviceability) in the loop.
 
-My focus is **engineering-grade AI**: models that are tested on real site data rather than only curated benchmarks, with clear limits, and delivered as reviewable evidence for engineers, not as black-box decisions.
+My standard: **results that survive review.** That means field validation rather than benchmark-only scores, calculations reproducible by hand, tests that pin the numbers, and clear limits on what a tool may decide.
 
 **Currently**
 
 - Co-founder & CTO, **AECAI Ltd**: an AI-assisted structural-inspection platform (Dec 2025 onwards).
-- R&D AI-Construction Specialist, **AGECS**: structural-drawing understanding (CAD-to-BIM) and Scan-to-BIM (Apr 2026 onwards).
+- R&D AI-Construction Specialist, **AGECS**: structural-drawing understanding and Scan-to-BIM (Apr 2026 onwards).
 
-**Before:** 115+ structural and façade design packages as a graduate engineer at National Consulting Engineers (2023–24). MSc Digital Construction Analytics & BIM, Ulster University, with **Distinction** (2025).
+**Before:** 115+ structural and façade design packages as a graduate engineer at National Consulting Engineers (2023–24). MSc Digital Construction Analytics & BIM, Ulster University, **Distinction** (2025).
 
 ---
 
-### Featured work
+### AI for infrastructure inspection
 
-| Project | What it shows | Evidence |
-|---|---|---|
-| **[concrete-defect-detection-shm](https://github.com/mohamedragab4554/concrete-defect-detection-shm)** | YOLO-seg vs U-Net vs FPN for concrete defects, then **field validation on 44 real site images**. Tested package, model card, honest leakage notes | Box mAP50 0.807 · U-Net mIoU 0.630 · field recall 0.933 · MSc dissertation |
-| **[water-tank-crack-digital-twin](https://github.com/mohamedragab4554/water-tank-crack-digital-twin)** | Crack images → calibrated width → class → **Revit (Dynamo), Speckle and Power BI** for a concrete water tank. Industry project with AECOM | Module mark 80% · VGG16 transfer learning · Power BI dashboard prototype |
-| **[mohamedragab4554.github.io](https://github.com/mohamedragab4554/mohamedragab4554.github.io)** | My portfolio: Next.js + three.js, with real-data 3D visuals of AI detections on structural plans and a scan-to-IFC model | Live site, CI deploy, Lighthouse 100 on desktop |
+| Project | What it shows |
+|---|---|
+| **[concrete-defect-detection-shm](https://github.com/mohamedragab4554/concrete-defect-detection-shm)** | YOLO-seg vs U-Net vs FPN for concrete defects, then **field validation on 44 real site images** (recall 0.933, specificity reported honestly). Tested package, model card, leakage notes. *MSc research* |
+| **[water-tank-crack-digital-twin](https://github.com/mohamedragab4554/water-tank-crack-digital-twin)** | Calibrated crack width → severity class → **Revit (Dynamo), Speckle, Power BI** for a concrete water tank. *Industry project with AECOM, 80%* |
+
+### openBIM and structural engineering tools
+
+| Project | What it shows |
+|---|---|
+| **[ifc-model-auditor](https://github.com/mohamedragab4554/ifc-model-auditor)** | BIM models tested like code: ISO 19650 naming, **buildingSMART IDS**, spatial and identity checks, duplicates, quantity take-off, **schema-valid BCF 2.1**, and a GitHub Action quality gate. Found 454 duplicated MEP fittings and a mis-mapped steel export in real Revit models |
+| **[ifc-load-takedown](https://github.com/mohamedragab4554/ifc-load-takedown)** | Column loads straight from IFC: Voronoi tributary areas, EN 1991-1-1 actions, **EN 1990 6.10a/b with leading and accompanying actions**, αn per category, equilibrium-checked, results written back into the IFC |
+| **[ec2-crack-width](https://github.com/mohamedragab4554/ec2-crack-width)** | EN 1992-1-1 §7.3 crack widths and EN 1992-3 tightness limits, shown step by step. **Cross-checked against fib's `structuralcodes`** on 200 random cases. Compares measured crack widths with design limits |
+| **[mohamedragab4554.github.io](https://github.com/mohamedragab4554/mohamedragab4554.github.io)** | My portfolio: Next.js + three.js with real-data 3D visuals (AI detections on structural plans, scan-to-IFC). Lighthouse 100 on desktop |
 
 **Professional R&D (not open source):** structural-drawing understanding with an 8-class segmentation model (val mask mAP50 0.893), Scan-to-BIM from 250 M+ point laser scans to IFC, and a production inspection pipeline. These are employer and company work, shown as case studies on the **[portfolio](https://mohamedragab4554.github.io)** only.
 
@@ -33,16 +41,15 @@ My focus is **engineering-grade AI**: models that are tested on real site data r
 - PyTorch · segmentation-models-pytorch · Ultralytics YOLO · TensorFlow/Keras
 - OpenCV · Open3D · NumPy · pandas · scikit-learn
 
-**BIM & digital construction:**
-- Revit · Dynamo · Navisworks · AutoCAD
-- IFC / IfcOpenShell · Speckle · Power BI
-- ISO 19650 workflows
+**openBIM:**
+- IfcOpenShell · IDS / ifctester · BCF · Revit · Dynamo · Navisworks
+- Speckle · Power BI · ISO 19650
 
-**Structural:** ETABS · SAP2000 · SAFE · IDEA StatiCa · Tekla · Eurocodes, AISC, ACI, ASCE 7
+**Structural:** Eurocodes (EN 1990, 1991, 1992) · AISC · ACI · ETABS · SAP2000 · SAFE · IDEA StatiCa · Tekla
 
 **Engineering software:**
-- Python · TypeScript / Next.js · SQL · Git
-- GitHub Actions · Docker · Supabase · serverless GPU inference
+- Python · TypeScript / Next.js · pytest · GitHub Actions
+- Docker · Supabase · serverless GPU inference
 
 ---
 
@@ -51,4 +58,4 @@ My focus is **engineering-grade AI**: models that are tested on real site data r
 <a href="https://www.linkedin.com/in/mohamed-ragab-278208199"><b>LinkedIn</b></a>
 </p>
 
-<sub>Metrics above link to their source repositories or portfolio case studies. Academic work is labelled as such; employer and client material is not published here.</sub>
+<sub>Metrics link to their source repositories. Academic work is labelled as such. Open-source tools are 2026 personal work built with AI pair-programming. Employer and client material is not published here.</sub>
