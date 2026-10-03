@@ -8,7 +8,7 @@ My standard: **results that survive review.** That means field validation rather
 
 **Currently**
 
-- Co-founder & CTO, **AECAI Ltd**: an AI-assisted structural-inspection platform (Dec 2025 onwards).
+- CTO, **AECAI Ltd**: an AI-assisted structural-inspection platform (Dec 2025 onwards).
 - R&D AI-Construction Specialist, **AGECS**: structural-drawing understanding and Scan-to-BIM (Apr 2026 onwards).
 
 **Before:** 115+ structural and façade design packages as a graduate engineer at National Consulting Engineers (2023–24). MSc Digital Construction Analytics & BIM, Ulster University, **Distinction** (2025).
